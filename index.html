@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' https://fonts.gstatic.com; style-src 'self' https://fonts.googleapis.com; connect-src 'self' http://localhost:3000; script-src 'self' 'unsafe-eval';">
+    <title>Spotify Playlist BPM Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="backButton" class="back-button" style="display: none;">←</button>
+
+        <h1>Spotify Playlist BPM Checker</h1>
+
+        <input type="text" id="playlistUrl" placeholder="Insira o link da playlist do Spotify">
+        <button id="bpmButton">Verificar BPM</button>
+
+        <div class="loading" id="loading"></div>
+
+        <div id="resultsContainer">
+            <h2 id="resultsHeading" style="display: none;">Resultados</h2>
+            <table style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Música</th>
+                        <th>BPM</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
